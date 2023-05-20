@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/close_app_temp"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:background="@drawable/close_app_background"
+        android:src="@drawable/icon_close"
+        android:id="@+id/icon_image"
+        android:layout_width="@dimen/text_icon_image_side_length"
+        android:layout_height="@dimen/text_icon_image_side_length"
+        android:padding="16dp" />
+
+    <TextView
+        android:text="Cerrar APP"
+        android:id="@+id/icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/color_texts"
+        android:textSize="@dimen/information_text_size" />
+
+</LinearLayout>

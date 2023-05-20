@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/idFP"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:background="@color/background_elements"
+        android:paddingStart="16dp"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="34sp"
+        tools:text="0" />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/nameFP"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:background="@color/background_elements"
+        android:paddingStart="16dp"
+        android:text="Elliot"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="34sp" />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/lastNameFP"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:background="@color/background_elements"
+        android:paddingStart="16dp"
+        android:text="Alderson"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="34sp" />
+
+
+    <TextView
+        android:paddingVertical="1dp"
+        android:id="@+id/icon_fp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/background_elements"
+        android:drawableStart="@drawable/drawable_icon_fp"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+</LinearLayout>

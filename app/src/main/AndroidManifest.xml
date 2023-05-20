@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.aratek.demo">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <receiver
+            android:directBootAware="true"
+            android:name=".MyBootReceiver"
+            android:label="IniciarMyBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:label="@string/list_employees"
+            android:icon="@drawable/list_employees"
+            android:name=".ListEmployees"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:label="@string/change_host"
+            android:icon="@drawable/change_host"
+            android:name=".ChangeHost"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".OptionsCoordinator"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".AuthenticationActivity"
+            android:screenOrientation="landscape"
+            android:label="Laroaccess">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/about" />
+        <activity
+            android:name=".FingerprintScannerDemo"
+            android:icon="@drawable/ic_fingerprint"
+            android:label="@string/fingerprint"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".CodeScannerDemo"
+            android:icon="@drawable/ic_qricon"
+            android:label="@string/hardware_barcode"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".NfcDemo"
+            android:icon="@drawable/ic_nfcicon"
+            android:label="@string/NFC"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+        </activity>
+    </application>
+
+</manifest>

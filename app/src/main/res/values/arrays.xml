@@ -1,0 +1,20 @@
+<resources>
+
+    <string-array name="displayed_demo_entries">
+        <item>@string/fingerprint</item>
+        <item>@string/hardware_barcode</item>
+        <item>@string/NFC</item>
+    </string-array>
+
+    <string-array name="displayed_demo_values" translatable="false">
+        <item>.FingerprintScannerDemo</item>
+        <item>.CodeScannerDemo</item>
+        <item>.NfcDemo</item>
+    </string-array>
+
+    <string-array name="options_coordinator_values" translatable="false">
+        <item>.ChangeHost</item>
+        <item>.ListEmployees</item>
+    </string-array>
+
+</resources>

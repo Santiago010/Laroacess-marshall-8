@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OptionsCoordinator">
+
+    <include
+        layout="@layout/info_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/content_margin_left"
+        android:layout_marginEnd="@dimen/content_margin_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        layout="@layout/details_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/content_margin_left"
+        android:layout_marginEnd="@dimen/content_margin_right"
+        />
+
+    <include layout="@layout/btn_close_activity" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="140dp">
+
+        <GridView
+            android:id="@+id/grid_options"
+            android:layout_width="750dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            tools:context=".OptionsCoordinator" />
+
+        <include layout="@layout/options_close_app" />
+    </LinearLayout>
+
+
+</LinearLayout>

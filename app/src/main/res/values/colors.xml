@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="information_text_color">#00AA00</color>
+    <color name="information_details_text_color">#00AA00</color>
+    <color name="error_text_color">#FF0000</color>
+    <color name="error_details_text_color">#FF0000</color>
+    <color name="button_bar_background_color">#EEEEEE</color>
+
+
+    <color name="color_texts">#000000</color>
+    <color name="background_elements">#D8D8D8</color>
+    <color name="green_element">#33FF00</color>
+    <color name="red_element">#FF0000</color>
+    <color name="background_indo_employee">#F3F3F3</color>
+</resources>

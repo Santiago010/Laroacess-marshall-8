@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Laroaccess</string>
+    <string name="permission_denied_info">Todos los permisos deben ser concedidos.</string>
+    <string name="import_configurations">Importar configuración</string>
+    <string name="configuration_file_not_exist">No existe el archivo de configuración</string>
+    <string name="configuration_file_load_failed">No se pudo cargar la configuración</string>
+    <string name="configuration_file_save_failed">No se pudo guardar la configuración</string>
+    <string name="settings">Configuraciones</string>
+    <string name="about">Acerca de</string>
+    <string name="about_info"><![CDATA[<h2><xliff:g>%1$s</xliff:g></h2><p/>App version: <xliff:g>%2$s</xliff:g><p/>SDK version: <xliff:g>%3$s</xliff:g><p/>]]></string>
+    <string name="loading">Cargando</string>
+    <string name="preparing_device">El dispositivo se está preparando, por favor espere. …</string>
+    <string name="closing_device">El dispositivo se está cerrando, por favor espere. …</string>
+    <string name="firmware_version">Firmware Version: </string>
+    <string name="serial_number">Serial Number: </string>
+
+
+    <!--    NFC Device-->
+    <string name="NFC">Tarjeta</string>
+    <string name="please_approach_a_nfc_tag">Por favor, aproxime una etiqueta NFC </string>
+
+    <!-- Fingerprint Device -->
+    <string name="fingerprint">Huella</string>
+    <string name="fp_collect_info">Información temporal: </string>
+    <string name="capture">Imagen capturada: </string>
+    <string name="extract">Extrayendo caracteristicas: </string>
+    <string name="generalize">Creando plantilla: </string>
+    <string name="verify">Autenticación: </string>
+    <string name="lfd_level">LFD level: </string>
+    <string-array name="lfd_levels">
+        <item>OFF</item>
+        <item>EXTRA LOW</item>
+        <item>LOW</item>
+        <item>MEDIUM</item>
+        <item>HIGH</item>
+        <item>ULTRA HIGH</item>
+    </string-array>
+    <string name="switching_lfd">Cambio de modo LFD...</string>
+    <string name="switch_lfd_success">Cambio de modo exitoso LFD .</string>
+    <string name="switch_lfd_failed">Fallo el cambio de modo LFD.</string>
+    <string name="press_finger">Por favor ponga el dedo en la zona de captura.</string>
+    <string name="enrolling">Inscribir huella dactilar a la base de datos …</string>
+    <string name="verifying">Verificando Huella dactilar…</string>
+    <string name="identifying">Identificando Huella dactilar…</string>
+    <string name="clearing">Limpiando Base de datos…</string>
+    <string name="fingerprint_device_open_success">Escáner de huellas dactilares preparado</string>
+    <string name="fingerprint_device_open_failed">Fallo al abrir dispositivo de huellas dactilares</string>
+    <string name="fingerprint_device_close_success">Exito al verrar dispositivo de huellas dactilares</string>
+    <string name="fingerprint_device_close_failed">Fallo al abrir dispositivo de huellas dactilares</string>
+    <string name="algorithm_initialization_failed">Falló la inicialización del Algoritmo</string>
+    <string name="not_done">No aplicable</string>
+    <string name="capture_image_success">Exito para capturar imagen de huella dactilar</string>
+    <string name="capture_image_failed">Fallo para capturar imagen de huella dactilar </string>
+    <string name="fake_finger_detected">Detecto dedo falso</string>
+    <string name="enroll_failed_because_of_extract_feature">Fallo al extraer las caracteristicas</string>
+    <string name="enroll_failed_because_of_make_template">La inscripción fracasó por el fracaso de la plantilla </string>
+    <string name="enroll_failed_because_of_get_id">La inscripción falló porque la base de datos de huellas dactilares está llena</string>
+    <string name="enroll_failed_because_of_error">La inscripción falló</string>
+    <string name="enroll_success">Incripción exitosa</string>
+    <string name="enrolled_id">La identificación de huella dactil con la inscripción es  <xliff:g>%1$d</xliff:g>.</string>
+    <string name="verify_failed_because_of_error">Verificación fallida</string>
+    <string name="fingerprint_not_match">La Huella dactilar no concide</string>
+    <string name="fingerprint_match">La Huella dactilar concide</string>
+    <string name="fingerprint_similarity">La similitud es <xliff:g>%1$d</xliff:g>.</string>
+    <string name="identify_failed_because_of_error">Identificación fallida</string>
+    <string name="identify_match">Identificación exitosa</string>
+    <string name="matched_id">La identificación de huella dactilar concide es  <xliff:g>%1$d</xliff:g>.</string>
+    <string name="clear_fingerprint_database_success">Exito al limpiar la base de datos</string>
+    <string name="clear_fingerprint_database_failed">Fallo al limpiar la base de datos</string>
+
+    <!-- Barcode Scanner -->
+    <string name="hardware_barcode">Codigo QR</string>
+    <string name="scan_barcode">Escanear QR</string>
+    <string name="align_barcode">Por favor, alinee la ventana de escaneo al QR</string>
+    <string name="hardware_barcode_scanner_open_success">Escáner de QR preparado</string>
+    <string name="hardware_barcode_scanner_open_failed">Fallo al abrir el escáner de QR</string>
+    <string name="hardware_barcode_scanner_close_success">Exito al cerrar el escáner de QR</string>
+    <string name="hardware_barcode_scanner_close_failed">Fallo al cerrar el escáner de QR</string>
+    <string name="barcode_scan_success">Exito al escánear el QR</string>
+    <string name="barcode_scan_failed">Fallo al escánear el QR</string>
+    <string name="unsupported_encoding">Los datos del QR no pudieron ser transferidos a la codificación UTF-8</string>
+
+
+    <!-- Error Code Strings -->
+    <string name="list_fp_empty">No se encontraron huellas dactilares</string>
+    <string name="employee_enroll_success">Huella dactilar enrolada exitosamente</string>
+    <string name="employee_enroll_fail">Este usuario ya tiene dos huellas asignadas</string>
+    <string name="employee_authenticated">Empleado autorizado</string>
+    <string name="employee_not_found">Empleado inexistente</string>
+    <!--    <string name="alert_not_found_fp">¡Atención no se encontraron huellas dactilares!</string>-->
+    <string name="error_get_fp_by_device">No existen huellas</string>
+    <string name="error_save_fp">Ocurrió un error, al guardar la huella para verificar, intente de nuevo</string>
+    <string name="error_get_fp">Ocurrió un error, al traer la huella para verificar, intente de nuevo</string>
+    <string name="error_save_fp_to_send">Ocurrio un error, al guardar la huella para enviar, intente de nuevo</string>
+    <string name="operation_successful">La operación tuvo éxito</string>
+    <string name="error_operation_failed">La operación fallo</string>
+    <string name="error_wrong_connection">Operación fracasó debido a una conexión equivocada</string>
+    <string name="error_device_busy">La operación falló porque el dispositivo está ocupado</string>
+    <string name="error_device_not_open">La operación falló porque el dispositivo no está abierto</string>
+    <string name="error_timeout">La operación falló debido al tiempo de espera</string>
+    <string name="error_no_permission">La operación falló por falta de permiso</string>
+    <string name="error_wrong_parameter">La operación falló debido a un parámetro incorrecto</string>
+    <string name="error_decode">La operación falló debido a una falla de decodificación</string>
+    <string name="error_initialization_failed">La operación falló debido a un error de inicialización</string>
+    <string name="error_unknown">La operación falló debido a un error desconocido</string>
+    <string name="error_not_support">La operación falló porque no es compatible</string>
+    <string name="error_not_enough_memory">La operación falló debido a memoria insuficiente</string>
+    <string name="error_device_not_found">La operación falló porque no se encuentra el dispositivo</string>
+    <string name="error_device_reopen">La operación falló porque el dispositivo se enciende repetidamente</string>
+    <string name="error_algorithm_initialization_failed">La operación falló debido a un error de inicialización del algoritmo de huellas dactilares</string>
+    <string name="error_invalid_feature_data">La operación falló debido a un error de inicialización del algoritmo de huellas dactilares</string>
+    <string name="error_bad_image">La operación falló debido a una imagen de huella dactilar no calificada</string>
+    <string name="error_not_match">La operación falló porque la huella digital no coincide</string>
+    <string name="error_low_point">La operación falló porque el puntaje de verificación de huellas dactilares es demasiado bajo</string>
+    <string name="error_no_finger">La operación falló porque no se encontraron dedos</string>
+    <string name="error_no_result">La operación falló debido a que no se encontró ninguna huella digital coincidente en la base de datos</string>
+    <string name="error_out_of_bound">La operación falló porque la identificación de la huella digital está fuera de rango</string>
+    <string name="error_database_full">La operación falló porque la base de datos está llena</string>
+    <string name="error_library_missing">La operación falló porque falta la biblioteca de algoritmos de huellas dactilares</string>
+    <string name="error_algorithm_uninitialize">La operación falló porque el algoritmo de huellas dactilares no está inicializado</string>
+    <string name="error_algorithm_reinitialize">La operación falló debido a que el algoritmo de la huella digital se inicializó repetidamente</string>
+    <string name="error_repeated_enroll">La operación falló debido a que la huella digital se registró repetidamente</string>
+    <string name="error_not_enrolled">La operación falló porque la huella digital no está registrada</string>
+    <string name="error_no_paper">El papel se ha agotado</string>
+    <string name="error_other">La operación falló debido a otros errores (Error: <xliff:g>%1$d</xliff:g>)</string>
+
+    <!-- Preference Titles -->
+    <string name="main_ui_header">Principal UI</string>
+
+    <!-- Main UI Preferences -->
+    <string name="displayed_demo_title">Displayed demo program</string>
+    <string name="title_activity_hamburgermenu">hamburgermenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Laroaccess</string>
+    <string name="nav_header_subtitle">CONTROL TOTAL EN UN SOLO SOFTWARE</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_list">Empleados</string>
+    <string name="menu_url">Cambiar Host</string>
+    <string name="title_activity_hamburguer_menu_principal">HamburgerMenuSecondary</string>
+
+    <string name="menu_authentication">Autenticar</string>
+    <string name="menu_login">Iniciar Sesión</string>
+    <string name="menu_logout">Cerrar sesión</string>
+    <string name="title_activity_hamburger_menu_principal">HamburgerMenuPrincipal</string>
+
+
+<!--    Options coordinator-->
+    <string name="list_employees">Usuarios</string>
+    <string name="change_host">Servidor</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChangeHost">
+
+    <include
+        layout="@layout/info_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/content_margin_left"
+        android:layout_marginEnd="@dimen/content_margin_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        layout="@layout/details_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/content_margin_left"
+        android:layout_marginEnd="@dimen/content_margin_right"
+        />
+
+    <include layout="@layout/btn_close_activity" />
+
+
+    <LinearLayout
+        android:paddingTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="900dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/text_icon_background"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servidor:"
+                android:textSize="32dp" />
+
+            <EditText
+                android:id="@+id/host"
+                style="@style/MyEditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="32dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="900dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/text_icon_background"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SN:"
+                android:textSize="32dp" />
+
+            <EditText
+                android:id="@+id/sn"
+                style="@style/MyEditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textSize="32dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="16dp">
+
+            <Button
+                android:id="@+id/save_host"
+                android:textSize="32dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:text="Guardar" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

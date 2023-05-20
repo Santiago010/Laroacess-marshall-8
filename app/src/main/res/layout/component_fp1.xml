@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/bt_enroll1"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:background="@drawable/fp1_background"
+        android:src="@drawable/ic_fingerprint"
+        android:id="@+id/icon_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:padding="16dp" />
+
+    <TextView
+        android:text="Huella 1"
+        android:id="@+id/icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/color_texts"
+        android:textSize="@dimen/information_text_size" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CodeScannerDemo"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/info_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/content_margin_left"
+        android:layout_marginEnd="@dimen/content_margin_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        layout="@layout/details_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/content_margin_left"
+        android:layout_marginEnd="@dimen/content_margin_right"
+    />
+
+<!--    <TextView-->
+<!--        android:id="@+id/firmware_version_label"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="@dimen/content_margin_left"-->
+<!--        android:text="@string/firmware_version" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/firmware_version"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="@dimen/content_margin_right"-->
+<!-- />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/serial_number_label"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="@dimen/content_margin_left"-->
+<!--        android:text="@string/serial_number" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/serial_number"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="@dimen/content_margin_right"-->
+<!-- />-->
+
+    <include tools:layout_editor_absoluteX="0dp" layout="@layout/target_message_qr" />
+    <include tools:layout_editor_absoluteX="0dp" layout="@layout/target_info_employee" />
+    <include tools:layout_editor_absoluteX="0dp" layout="@layout/target_info_vehicle" />
+    <include tools:layout_editor_absoluteX="0dp" layout="@layout/target_message_qr_not_exit" />
+
+
+</LinearLayout>
